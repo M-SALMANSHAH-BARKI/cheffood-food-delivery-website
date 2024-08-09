@@ -1,0 +1,273 @@
+/* -----------------------------------------------------css reset---------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------creating css global variables by the :rootfunction --------------------*/
+:root {
+    --navbar-height: 233px;
+}
+
+/* ---------------------------------------------ended of css variables-------------------------------------- */
+
+/* -------------------------------------------start of navigation bar css------------------------------------*/
+#nav-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* position: sticky; */
+    /* justify-content: center; */
+    top: 0;
+}
+
+#nav-bar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* navigation bar css : Logo and image */
+
+#nav-logo {
+    width: 10%;
+    margin: 10px 10px;
+
+}
+
+#nav-logo img {
+    width: 90%;
+    margin: 10px 10px;
+}
+
+/*----------------------------------------------- navigation bar css : list styling---------------------- */
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#nav-bar ul li a {
+    display: block;
+    color: white;
+    padding: 1px 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav-bar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* -------------------------------------end of navigation bar css------------------------------------- */
+
+/* -----------------------------------start of Home section css--------------------------------------- */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    color: cadetblue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#home p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#home {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#home::before {
+    content: "";
+    background: url(Images/pexels-ella-olsson-1640773.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 78%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+/* -------------------------------------end of home section css------------------------------------- */
+
+/* -------------------------------start of Services Section css--------------------------------- */
+#services {
+    margin: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#services .box {
+    border: 2px solid cadetblue;
+    padding: 34px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: gainsboro;
+    
+}
+
+#services .box img {
+    width: 30%;
+    /* height: 170px; */
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ------------------------------------end of services section css--------------------------------*/
+
+
+/* -------------------------------------start of client sectioon------------------------------------- */
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(Images/pexels-element-digital-775031.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img {
+    height: 80px;
+    border-radius: 30%;
+}
+
+#skype img {
+    background-color: white;
+    color: red;
+}
+
+.client-item {
+    padding: 20px;
+}
+
+/* -------------------------------------end  of  client sectioon------------------------------------- */
+
+/* -------------------------------------start of contact section------------------------------------- */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(Images/pexels-valeria-boltneva-1199957.jpg) no-repeat center center/cover;
+
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: none;
+    font-size: 0.9 rem;
+}
+
+
+
+
+
+/* -------------------------------------end of contact section------------------------------------- */
+
+/* ------------------------------------Footer------------------------------------------------------ */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+
+
+
+
+/* ------------------------------------Footer------------------------------------------------------ */
+
+/* >>>>>>>>>>>>>>>       utility class which i use throughout in website    >>>>>>>>>>>>>  */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h-secondry {
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    /* border : 2px solid cadetblue; */
+    border: none;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    margin: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
